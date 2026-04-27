@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Master - Julien Jordan</title>
+    <link rel="stylesheet" href="belajar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <h1 class="anim-typewriter">Selamat Datang di Game Saya</h1>
+            <p class="anim-fadein">by <span class="highlight">Julien Jordan</span></p>
+            <button id="start-game-btn" class="anim-fadein-delayed">Mulai Permainan</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <header><h1>Typing <span class="highlight">Master</span></h1></header>
+        <div class="game-box">
+            <div id="word-display">Bersiap...</div>
+            <input type="text" id="input-field" placeholder="Ketik di sini..." autocomplete="off">
+            <div class="stats-container">
+                <div class="stat-card"><span class="stat-label">Skor</span><span id="score" class="stat-value">0</span></div>
+                <div class="stat-card time-card"><span class="stat-label">Waktu</span><span id="time" class="stat-value">15</span><span class="unit">s</span></div>
+                <div class="stat-card level-card"><span class="stat-label">Level</span><span id="level" class="stat-value">1</span></div>
+            </div>
+        </div>
+        <div id="game-over-panel" class="hidden">
+            <h2>GAME OVER!</h2>
+            <p>Skor Akhir:</p>
+            <div id="final-score">0</div>
+            <button id="restart-btn">Main Lagi</button>
+        </div>
+    </div>
+    <script src="belajar.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+.main-container { text-align: center; width: 90%; max-width: 600px; }
+.game-box { background: rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+#word-display { font-size: 3.5rem; font-weight: 700; margin-bottom: 20px; text-shadow: 0 5px 10px rgba(0,0,0,0.2); }
+#input-field { width: 100%; padding: 15px; font-size: 1.2rem; border-radius: 50px; border: none; text-align: center; margin-bottom: 20px; }
+.stats-container { display: flex; gap: 10px; }
+.stat-card { background: rgba(0,0,0,0.2); padding: 10px; flex: 1; border-radius: 10px; }
+.highlight { color: #f1c40f; }
+.hidden { visibility: hidden; opacity: 0; }
+#game-over-panel { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; color: #333; padding: 40px; border-radius: 20px; z-index: 10; }
+#welcome-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: #1a1a2e; display: flex; justify-content: center; align-items: center; z-index: 100; transition: 0.5s; }
+.anim-typewriter { overflow: hidden; white-space: nowrap; border-right: .15em solid #f1c40f; animation: typing 3.5s steps(40, end); }
+@keyframes typing { from { width: 0 } to { width: 100% } }
+.flash-red { border: 2px solid #e74c3c !important; animation: shake 0.3s; }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+.fade-out { opacity: 0; visibility: hidden; }
